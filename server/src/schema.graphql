@@ -1,0 +1,33 @@
+type Query {
+  info: String!
+  findAll: [User!]!
+}
+
+type Mutation {
+  addUser(
+    prefix: String!
+    firstName: String!
+    surName: String!
+    email: String!
+    mobilePhone: String!
+    gender: String!
+    age: String!
+    nationlity: String!
+    org: String!
+    jobTitle: String!
+  ): User!
+}
+
+type User {
+  id: ID!
+  prefix: String!
+  firstName: String!
+  surName: String!
+  email: String!
+  mobilePhone: String!
+  gender: String!
+  age: String!
+  nationlity: String!
+  org: String!
+  jobTitle: String!
+}
